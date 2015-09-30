@@ -6696,10 +6696,11 @@ button.create {
 }
 @media only screen and (min-width: 71.875em) {
   #main-room .right_section {
-    right: 43%;
+    right: 0%;
     float: right;
     width: 35%;
     position: fixed;
+    margin-right: 0px!important;
   }
 }
 @media only screen and (max-width: 71.875em) {
@@ -8817,5 +8818,9 @@ ul.wall_comments li a.remove {
     height: 35px;
     width: 35px;
 	cursor: pointer;"
+}
+
+#container-room-list #main-room{
+overflow-x:hidden!important
 }
 /* End User Styling */
