@@ -475,11 +475,11 @@ body.videoActive .main-page-container {
 }
 
 .backstretch:before {
-  content: url(https://i.imgur.com/zYvDb7O.png);
+  content: url(http://i.imgur.com/Ttea4wf.png);
 }
 
 .backstretch {
-  content: url(https://i.imgur.com/zYvDb7O.png);
+  content: url(http://i.imgur.com/Ttea4wf.png);
   -moz-transition: left 0.2s ease-in-out;
   -o-transition: left 0.2s ease-in-out;
   -webkit-transition: left 0.2s ease-in-out;
@@ -659,11 +659,11 @@ b {
 }
 
 .right {
-  float: right;
+  float: left;
 }
 
 .left {
-  float: left;
+  float: right;
 }
 
 .white {
@@ -1385,17 +1385,14 @@ button {
   padding-top: .5em;
   border: 0;
   outline: 0;
-  -moz-border-radius: 0.1875em;
-  -webkit-border-radius: 0.1875em;
-  border-radius: 0.1875em;
   -moz-box-shadow: inset 0 -2px #333;
   -webkit-box-shadow: inset 0 -2px #333;
   box-shadow: inset 0 -2px #333;
 }
 button:hover {
-  -moz-box-shadow: inset 0 -2px magenta;
-  -webkit-box-shadow: inset 0 -2px magenta;
-  box-shadow: inset 0 -2px magenta;
+  -moz-box-shadow: inset 0 -2px #933144;
+  -webkit-box-shadow: inset 0 -2px #933144;
+  box-shadow: inset 0 -2px #933144;
 }
 
 /* ============================================================ */
@@ -1878,14 +1875,6 @@ body.roomview #footer ul {
   #header-global .user-info .user-header-menu li.logout {
     display: block;
   }
-}
-#header-global .user-info .user-header-menu li .user-messages-button {
-  -moz-border-radius-topleft: 0.1875em;
-  -webkit-border-top-left-radius: 0.1875em;
-  border-top-left-radius: 0.1875em;
-  -moz-border-radius-bottomleft: 0.1875em;
-  -webkit-border-bottom-left-radius: 0.1875em;
-  border-bottom-left-radius: 0.1875em;
 }
 #header-global .user-info .user-header-menu li .user-info-button {
   position: relative;
@@ -2385,10 +2374,10 @@ body.roomview #footer ul {
 }
 #main-menu-left a.close-menu span {
   font-size: 1em;
-  color: magenta;
+  color: #D21E41;
 }
 #main-menu-left a.close-menu:hover {
-  color: magenta;
+  color: #D21E41;
 }
 #main-menu-left a.topdubs-link {
   color: #666;
@@ -2571,7 +2560,7 @@ body.roomview #footer ul {
 #chat {
   position: relative;
   margin: 0;
-  padding: 2.7em 0 4em 0;
+  padding: 2.7em 0 6.2em 0;
   background: #111;
   z-index: 10;
   width: 100%;
@@ -2770,16 +2759,15 @@ body.roomview #footer ul {
   outline: 0;
 }
 #chat .chat-container .chat-messages {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  height: inherit;
-  overflow: hidden;
-  -moz-transition: height 0.1s;
-  -o-transition: height 0.1s;
-  -webkit-transition: height 0.1s;
-  transition: height 0.1s;
-  height: 574px!important;
+      position: relative;
+    margin: 0;
+    padding: 0;
+    height: inherit;
+    overflow: hidden;
+    -moz-transition: height 0.1s;
+    -o-transition: height 0.1s;
+    -webkit-transition: height 0.1s;
+    transition: height 0.1s;
 }
 #chat .chat-container .owner-mod {
   color: yellow;
@@ -2898,7 +2886,7 @@ body.roomview #footer ul {
 #chat .chat-container ul.chat-main li .activity-row .text p a.username,
 #chat .chat-container ul.chat-main li .activity-row .text p a.username:hover,
 #chat .chat-container ul.chat-main li .activity-row .text p a.username:visited {
-  color: #00BCD4;
+  color: #D21E41;
 }
 #chat .chat-container ul.chat-main li .activity-row .text p a.autolink {
   word-break: break-all;
@@ -4008,7 +3996,7 @@ ul#top-dubs .wall-post-list {
   position: fixed;
   bottom: 0;
   z-index: 99999;
-  min-height: 2.7em;
+  min-height: 3em;
   width: 100%;
   -moz-transition-property: all;
   -o-transition-property: all;
@@ -4033,13 +4021,8 @@ ul#top-dubs .wall-post-list {
   clear: both;
 }
 #player-controller .right {
-  float: left!important;
-  color: 212121;
-  border-left: 1px #202020 solid;
-    position: relative;
-    left: 653px;
-    bottom: 175px;
-    overflow: overlay;
+  overflow: overlay;
+  z-index: 9;
 }
 #player-controller .right li.copy {
   border-right: 0;
@@ -4074,7 +4057,6 @@ ul#top-dubs .wall-post-list {
 }
 #player-controller ul li {
   float: left;
-  border-right: 1px #202020 solid;
   display: block;
 }
 #player-controller ul li.remove-if-iframe {
@@ -4117,26 +4099,26 @@ ul#top-dubs .wall-post-list {
   transition-timing-function: linear;
 }
 #player-controller ul li a:hover, #player-controller ul li a.voted {
-  background: magenta;
+  background: #933144;
 }
 #player-controller ul li a:hover span, #player-controller ul li a.voted span {
-  color: #000;
+  color: #ccc;
 }
 #player-controller ul li a.dubup:hover, #player-controller ul li a.dubup.voted {
-  background: cyan;
+  background: #379331;
 }
 #player-controller ul li a.playbtn {
   position: relative;
 }
 #player-controller ul li a.playbtn:hover {
-  background-color: magenta;
+  background-color: #D21E41;
 }
 #player-controller ul li a.playbtn .queue-info {
   display: none;
   position: absolute;
   top: 0;
   right: 0;
-  background: magenta;
+  background: #D21E41;
   color: #000;
   font-weight: bold;
   font-size: 0.75em;
@@ -4225,7 +4207,7 @@ ul#top-dubs .wall-post-list {
 #player-controller ul li.infoContainer {
   border-right: 0;
   padding: 0.7em 1.2em;
-  position: relative;
+  position: initial;
   overflow: hidden;
   display: none;
 }
@@ -4552,14 +4534,14 @@ ul#top-dubs .wall-post-list {
   cursor: pointer;
 }
 #main_player .player_sharing span:hover {
-  color: magenta;
+  color: #933144;
 }
 #main_player .player_container {
   display: block;
   padding: 0.75em;
   height: 10em;
   position: relative;
-  background: #000;
+  background: rgba(0, 0, 0, 0.5);
   z-index: 11;
 }
 @media only screen and (min-width: 31.25em) {
@@ -4569,7 +4551,7 @@ ul#top-dubs .wall-post-list {
 }
 @media only screen and (min-width: 37.5em) {
   #main_player .player_container {
-    height: 25.45em;
+    height: 23em;
   }
 }
 #main_player .player_container:hover .videoquality-el.show,
@@ -4660,7 +4642,7 @@ ul#top-dubs .wall-post-list {
 }
 #main_player .player_container .skip-el {
   cursor: pointer;
-  background: magenta;
+  background: #7D3030;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
   opacity: 0.4;
   display: none;
@@ -4670,7 +4652,7 @@ ul#top-dubs .wall-post-list {
   margin: 0;
 }
 #main_player .player_container .videoquality-el {
-  background: cyan;
+  background: #933144;
   left: 0;
   bottom: 0;
   top: auto;
@@ -4678,7 +4660,7 @@ ul#top-dubs .wall-post-list {
   cursor: pointer;
 }
 #main_player .player_container .refresh-el {
-  background: cyan;
+  background: #933144;
   left: 0;
   top: 0;
   margin: 0;
@@ -4711,7 +4693,7 @@ ul#top-dubs .wall-post-list {
   -moz-border-radius: 0.6em;
   -webkit-border-radius: 0.6em;
   border-radius: 0.6em;
-  background: #ffe;
+  background: #ccc;
   border: 0;
   padding: 0;
   height: 1.2em;
@@ -4739,7 +4721,7 @@ ul#top-dubs .wall-post-list {
   left: 0;
   margin: 0;
   display: block;
-  z-index: 9999;
+  z-index: 99999;
   position: fixed;
   -moz-transition-property: bottom;
   -o-transition-property: bottom;
@@ -4769,7 +4751,7 @@ ul#top-dubs .wall-post-list {
   cursor: pointer;
 }
 #browser span.title {
-  color: cyan;
+  color: #CC2646;
   font-family: "bebas-neue", Arial, Helvetica, sans-serif;
   display: block;
   width: auto;
@@ -4809,7 +4791,7 @@ ul#top-dubs .wall-post-list {
   padding: 0.4em;
   text-align: center;
   color: #000;
-  background: magenta;
+  background: #933144;
 }
 #browser ul.playlist-style {
   width: 100%;
@@ -4889,7 +4871,7 @@ ul#top-dubs .wall-post-list {
   margin-left: -20px;
   top: 0;
   text-transform: uppercase;
-  background: magenta;
+  background: red;
   color: #000;
   padding: 5px 15px;
   font-size: 12px;
@@ -4961,7 +4943,7 @@ ul#top-dubs .wall-post-list {
   padding: 0.5em 1em;
 }
 #browser .content-videos ul.browserPlaylistItems > li .display-success {
-  background: cyan;
+  background: red;
   color: #000;
 }
 #browser .content-videos ul.browserPlaylistItems > li.removed {
@@ -5042,7 +5024,7 @@ ul#top-dubs .wall-post-list {
   padding: 0.125em 0.3em;
   color: white;
   font-weight: bold;
-  background: magenta;
+  background: #D21E41;
   font-size: 0.65em;
 }
 @media only screen and (min-width: 71.875em) {
@@ -5168,7 +5150,7 @@ ul#top-dubs .wall-post-list {
   font-weight: bold;
 }
 #browser .content-videos ul.browserPlaylistItems > li .description p span {
-  color: magenta;
+  color: #D21E41;
   display: inline-block;
   margin: 0;
 }
@@ -5205,7 +5187,7 @@ ul#top-dubs .wall-post-list {
 }
 @media only screen and (min-width: 71.875em) {
   #browser .browser-content {
-    border: 2px cyan solid;
+    border: 2px #7D3030 solid;
   }
 }
 #browser .browser-content-header {
@@ -5294,7 +5276,7 @@ ul#top-dubs .wall-post-list {
   display: none;
 }
 #browser .browser-content-header .form a.active {
-  outline-color: magenta;
+  outline-color: #933144;
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
 }
@@ -5304,8 +5286,8 @@ ul#top-dubs .wall-post-list {
 }
 #browser .browser-content-header .form a.search-btn {
   color: white;
-  background: magenta;
-  outline-color: magenta;
+  background: #933144;
+
   padding: 0.4em 0.8em;
 }
 #browser .browser-content-header .form a.search-btn span {
@@ -5318,7 +5300,7 @@ ul#top-dubs .wall-post-list {
   top: 0.5em;
   margin: 0;
   display: block;
-  color: cyan;
+  color: #C61414;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
 }
@@ -6727,7 +6709,7 @@ button.create {
 }
 #main-room .left_section {
   position: relative;
-  background: #000;
+  background: rgba(0, 0, 0, 0.5);
   width: 100%;
 }
 @media only screen and (min-width: 71.875em) {
@@ -8824,4 +8806,16 @@ ul.wall_comments li a.remove {
   margin: 5px 0;
 }
 
+#header-global button .icon-menu:first-child, .menu-expand button:first-child {
+    display: none;
+}
+
+.main-menu li:first-child {
+    background-repeat: no-repeat;
+    background-image: url("http://i.imgur.com/fJcHyAm.png");
+    background-position: 0 0;
+    height: 35px;
+    width: 35px;
+	cursor: pointer;"
+}
 /* End User Styling */
