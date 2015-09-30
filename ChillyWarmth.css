@@ -465,7 +465,7 @@ body {
   background-image: url("https://mediadubtrackfm.s3.amazonaws.com/assets/images/backgrounds/mainbg.png");
   background-color: #000;
   font: 1em/1.25em "proxima-nova", sans-serif;
-  color: #CCCCCC;
+  color: #fff;
   width: 100%;
   padding: 0;
   overflow-x: hidden;
@@ -730,7 +730,7 @@ div.mousescroll:hover {
   font-family: "proxima-nova", sans-serif;
   font-size: 1.125em;
   color: #000;
-  background: cyan;
+  background: #EE4338;
   zoom: 1;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
@@ -1379,20 +1379,20 @@ button {
   line-height: 1;
   font-family: "proxima-nova", sans-serif;
   text-transform: uppercase;
-  background-color: #333;
   color: #CCCCCC;
   padding: .5em .75em;
   padding-top: .5em;
   border: 0;
   outline: 0;
-  -moz-box-shadow: inset 0 -2px #333;
-  -webkit-box-shadow: inset 0 -2px #333;
-  box-shadow: inset 0 -2px #333;
+  background: transparent;
 }
 button:hover {
-  -moz-box-shadow: inset 0 -2px #933144;
-  -webkit-box-shadow: inset 0 -2px #933144;
-  box-shadow: inset 0 -2px #933144;
+    background-color: #2D112A;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
 }
 
 /* ============================================================ */
@@ -1575,7 +1575,7 @@ body.roomview #footer ul {
   position: fixed;
   top: 0;
   width: 100%;
-  background: #111;
+  background: #45283C;
   text-align: left;
   text-transform: uppercase;
   z-index: 1001;
@@ -1741,7 +1741,7 @@ body.roomview #footer ul {
   left: 0.5em;
 }
 #header-global .main-menu li input {
-  background: #333;
+  background: #2D112A;
   color: #CCCCCC;
   width: 20em;
   margin: 0.2em 0 0 0;
@@ -1847,7 +1847,6 @@ body.roomview #footer ul {
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
   border-radius: 0;
-  border-right: 1px solid #111;
 }
 #header-global .user-info .user-header-menu li span {
   font-size: 0.75em;
@@ -2335,8 +2334,9 @@ body.roomview #footer ul {
 }
 
 #main-menu-left {
+    border-right: 5px solid #45283C;
   padding: 1em 0 0 0;
-  background: #111;
+  background: #2D112A;
   position: fixed;
   height: 100%;
   left: -230px;
@@ -2364,7 +2364,7 @@ body.roomview #footer ul {
 #main-menu-left a.close-menu {
   border-bottom: 0;
   font-size: 1em;
-  background: #111;
+  background: #45283C;
   padding: 0.6em;
   position: absolute;
   right: -2.2em;
@@ -2560,11 +2560,12 @@ body.roomview #footer ul {
 #chat {
   position: relative;
   margin: 0;
-  padding: 2.7em 0 6.2em 0;
-  background: #111;
+  padding: 3em 0 6.2em 0;
+  background: rgba(45, 17, 42, 0.6);
   z-index: 10;
   width: 100%;
   display: none;
+  top: 0.4em;
 }
 @media only screen and (min-width: 71.875em) {
   #chat {
@@ -2632,7 +2633,7 @@ body.roomview #footer ul {
   top: 0;
   right: 0;
   padding: 0.5em 1em;
-  background: #111;
+  background: rgba(45,17,42,0.7);
   border-bottom: 1px #202020 solid;
   width: 100%;
   z-index: 10;
@@ -2713,7 +2714,7 @@ body.roomview #footer ul {
   bottom: 0;
   border-top: 1px #202020 solid;
   padding: 1em 3em 1em 1em;
-  background: #111;
+  background: rgba(45, 17, 42, 0.7);
   z-index: 99999;
 }
 #chat .chat-container .pusher-chat-widget-input p {
@@ -2729,7 +2730,7 @@ body.roomview #footer ul {
   height: 2em;
   color: #ffe;
   padding: 0;
-  background: 212121;
+  background: #45283C;
   text-align: center;
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
@@ -2886,7 +2887,7 @@ body.roomview #footer ul {
 #chat .chat-container ul.chat-main li .activity-row .text p a.username,
 #chat .chat-container ul.chat-main li .activity-row .text p a.username:hover,
 #chat .chat-container ul.chat-main li .activity-row .text p a.username:visited {
-  color: #D21E41;
+  color: #ccc;
 }
 #chat .chat-container ul.chat-main li .activity-row .text p a.autolink {
   word-break: break-all;
@@ -2920,9 +2921,6 @@ body.roomview #footer ul {
   top: 0;
   width: 0;
   height: 0;
-  border-top: 0px solid transparent;
-  border-bottom: 0.75em solid transparent;
-  border-right: 0.75em solid #111;
 }
 #chat .chat-container ul.chat-main li .image_row img {
   width: 100%;
@@ -3992,7 +3990,7 @@ ul#top-dubs .wall-post-list {
 }
 
 #player-controller {
-  background: #111;
+  background: #2D112A;
   position: fixed;
   bottom: 0;
   z-index: 99999;
@@ -4241,7 +4239,7 @@ ul#top-dubs .wall-post-list {
   bottom: 0;
   height: 5px;
   left: 0;
-  background: #ffe;
+  background: #FCE3D6;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
   opacity: 1;
 }
@@ -4511,7 +4509,7 @@ ul#top-dubs .wall-post-list {
   }
 }
 #main_player .player_sharing {
-  background: #111;
+  background: rgba(45,17,42,0.6);
   left: 0;
   bottom: 0;
   position: relative;
@@ -4541,7 +4539,7 @@ ul#top-dubs .wall-post-list {
   padding: 0.75em;
   height: 10em;
   position: relative;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(45,17,42,0.6);
   z-index: 11;
 }
 @media only screen and (min-width: 31.25em) {
@@ -4745,7 +4743,7 @@ ul#top-dubs .wall-post-list {
   opacity: 1;
 }
 #browser.animate {
-  bottom: 2em;
+  bottom: 3.5em;
 }
 #browser span.preview {
   cursor: pointer;
@@ -4811,7 +4809,7 @@ ul#top-dubs .wall-post-list {
   border-top: 1px solid #000;
   border-right: 1px solid #000;
   border-left: 1px solid #000;
-  background: #333;
+  background: #45283C;
   font-weight: bold;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
@@ -5195,7 +5193,7 @@ ul#top-dubs .wall-post-list {
   overflow: hidden;
   color: #00FFFF;
   font-family: "bebas-neue", Arial, Helvetica, sans-serif;
-  background: #111;
+  background: #2D112A;
   position: absolute;
   z-index: 999;
   top: 0;
@@ -5235,6 +5233,7 @@ ul#top-dubs .wall-post-list {
   background: none;
   width: auto;
   width: 11em;
+  background: #190416;
 }
 @media only screen and (min-width: 71.875em) {
   #browser .browser-content-header .form input[type=text] {
@@ -5316,7 +5315,7 @@ ul#top-dubs .wall-post-list {
   height: 100%;
   position: absolute;
   top: 0;
-  background: #111;
+  background: #2D112A;
   z-index: 9;
   right: -100%;
   padding: 5.063em 1em 1em 1em;
@@ -6669,7 +6668,7 @@ button.create {
 }
 @media only screen and (min-width: 71.875em) {
   #main-room {
-    margin-top: 2em;
+    margin-top: 1.6em;
   }
 }
 @media only screen and (max-width: 71.875em) {
@@ -6710,7 +6709,7 @@ button.create {
 }
 #main-room .left_section {
   position: relative;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(45,17,42,0.6);
   width: 100%;
 }
 @media only screen and (min-width: 71.875em) {
@@ -8814,13 +8813,28 @@ ul.wall_comments li a.remove {
 .main-menu li:first-child {
     background-repeat: no-repeat;
     background-image: url("http://i.imgur.com/fJcHyAm.png");
-    background-position: 0 0;
-    height: 35px;
-    width: 35px;
-	cursor: pointer;"
+    background-position: 6px 4px;
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+    background-color: #45283C;
+    top: -6px;
+    left: -8px;
 }
 
 #container-room-list #main-room{
 overflow-x:hidden!important
+}
+
+.relateX{
+	border-left: 6px solid #C31F1F!important
+}
+
+.liY .option {
+    color: #933144!important
+}
+
+.isOption {
+	color:#ccc!important
 }
 /* End User Styling */
