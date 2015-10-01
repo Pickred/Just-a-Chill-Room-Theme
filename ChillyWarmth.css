@@ -4208,6 +4208,8 @@ ul#top-dubs .wall-post-list {
   position: initial;
   overflow: hidden;
   display: none;
+  float: left;
+  /* position: fixed; */
 }
 @media only screen and (min-width: 71.875em) {
   #player-controller ul li.infoContainer {
@@ -4217,6 +4219,7 @@ ul#top-dubs .wall-post-list {
 @media only screen and (min-width: 71.875em) {
   #player-controller ul li.infoContainer.display-block {
     display: block;
+    float: left;
   }
 }
 #player-controller ul li.infoContainer .currentTime {
@@ -4247,6 +4250,7 @@ ul#top-dubs .wall-post-list {
   width: 2.7em;
   height: 2.7em;
   overflow: hidden;
+  float: left;
 }
 @media only screen and (max-width: 50em) {
   #player-controller ul li.imgEl {
@@ -4659,8 +4663,8 @@ ul#top-dubs .wall-post-list {
 }
 #main_player .player_container .refresh-el {
   background: #933144;
-  left: 0;
-  top: 0;
+  left: .63em;
+  top: .67em;
   margin: 0;
   cursor: pointer;
 }
@@ -5487,6 +5491,7 @@ ul#top-dubs .wall-post-list {
   position: absolute;
   z-index: 9999;
   display: block;
+  left:0px;
 }
 #addToPlaylistFloatContainer.playerBottomFixed {
   position: fixed;
