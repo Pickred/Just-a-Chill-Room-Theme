@@ -1214,7 +1214,7 @@ ul.avatar-list li {
   cursor: pointer;
   border: 1px solid #000;
   display: inline-block;
-  background: #000;
+  background: #45283C;
   font-family: "futura-pt", sans-serif;
   color: #CCCCCC;
   text-align: center;
@@ -1385,12 +1385,6 @@ button {
   border: 0;
   outline: 0;
   background: transparent;
-  -moz-border-radius: 0em;
-  -webkit-border-radius: 0em; 
-  border-radius: 0em; 
-  -moz-box-shadow: 0;
-  -webkit-box-shadow: 0;
-  box-shadow: 0;
 }
 button:hover {
     background-color: #2D112A;
@@ -1399,9 +1393,9 @@ button:hover {
     -moz-transition: .5s;
     -webkit-transition: .5s;
     transition: .5s;
-	-moz-box-shadow: 0;
-    -webkit-box-shadow: 0;
-    box-shadow: 0;
+	-moz-box-shadow: inset 0 -2px #2D112A;
+    -webkit-box-shadow: inset 0 -2px #2D112A;
+    box-shadow: inset 0 -2px #2D112A;
 }
 
 /* ============================================================ */
@@ -1715,7 +1709,6 @@ body.roomview #footer ul {
 #header-global h1 {
   background: #111;
   position: absolute;
-  display:none
 }
 #header-global h1 span {
   display: block;
@@ -1857,7 +1850,6 @@ body.roomview #footer ul {
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
   border-radius: 0;
-  border:none!important;
 }
 #header-global .user-info .user-header-menu li span {
   font-size: 0.75em;
@@ -2571,7 +2563,7 @@ body.roomview #footer ul {
 #chat {
   position: relative;
   margin: 0;
-  padding: 3em 0 6.2em 0;
+  padding: 2.3em 0 4.1em 0;
   background: rgba(45, 17, 42, 0.6);
   z-index: 10;
   width: 100%;
@@ -2652,7 +2644,7 @@ body.roomview #footer ul {
 #chat .chat_tools .room-user-counter {
   cursor: pointer;
   background: #2D112A;
-  color: #ffe;
+  color: #ccc;
   padding: 0.5em 0.6em 0.5em 0.5em;
   display: block;
   position: absolute;
@@ -2751,7 +2743,7 @@ body.roomview #footer ul {
   box-shadow: none;
 }
 #chat .chat-container .pusher-chat-widget-input .icon-camera {
-  color: #CCCCCC;
+  color: 212121;
   position: absolute;
   right: 3.7em;
   top: 1.5em;
@@ -2780,6 +2772,7 @@ body.roomview #footer ul {
     -o-transition: height 0.1s;
     -webkit-transition: height 0.1s;
     transition: height 0.1s;
+	height: 32.3em!important;
 }
 #chat .chat-container .owner-mod {
   color: yellow;
@@ -2932,6 +2925,9 @@ body.roomview #footer ul {
   top: 0;
   width: 0;
   height: 0;
+      border-top: 0px solid transparent;
+    border-bottom: 0em solid transparent;
+    /* border-right: 0em solid #111; */
 }
 #chat .chat-container ul.chat-main li .image_row img {
   width: 100%;
@@ -4032,7 +4028,7 @@ ul#top-dubs .wall-post-list {
 #player-controller .right {
   overflow: overlay;
   z-index: 9;
-  position: relative;
+  float: left!important;
 }
 #player-controller .right li.copy {
   border-right: 0;
@@ -4220,8 +4216,6 @@ ul#top-dubs .wall-post-list {
   position: initial;
   overflow: hidden;
   display: none;
-  float: left;
-  /* position: fixed; */
 }
 @media only screen and (min-width: 71.875em) {
   #player-controller ul li.infoContainer {
@@ -4231,7 +4225,6 @@ ul#top-dubs .wall-post-list {
 @media only screen and (min-width: 71.875em) {
   #player-controller ul li.infoContainer.display-block {
     display: block;
-    float: left;
   }
 }
 #player-controller ul li.infoContainer .currentTime {
@@ -4262,7 +4255,6 @@ ul#top-dubs .wall-post-list {
   width: 2.7em;
   height: 2.7em;
   overflow: hidden;
-  float: left;
 }
 @media only screen and (max-width: 50em) {
   #player-controller ul li.imgEl {
@@ -4675,8 +4667,8 @@ ul#top-dubs .wall-post-list {
 }
 #main_player .player_container .refresh-el {
   background: #933144;
-  left: .63em;
-  top: .67em;
+  left: 0;
+  top: 0;
   margin: 0;
   cursor: pointer;
 }
@@ -5503,7 +5495,6 @@ ul#top-dubs .wall-post-list {
   position: absolute;
   z-index: 9999;
   display: block;
-  left:0px;
 }
 #addToPlaylistFloatContainer.playerBottomFixed {
   position: fixed;
@@ -6806,6 +6797,7 @@ button.create {
     top: 0;
     display: block;
     left: 100%;
+	background:#2D112A;
   }
 }
 #main_avatar_room #avatar {
@@ -6813,6 +6805,7 @@ button.create {
   padding: 0;
   overflow: hidden;
   position: relative;
+  top: .4em;
 }
 #main_avatar_room #avatar .loadingAva {
   position: absolute;
@@ -6871,7 +6864,7 @@ button.create {
   right: 0;
   width: 100%;
   padding: 0.35em 0.5em;
-  background: #000;
+  background: #2D112A;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: 0.8;
 }
@@ -6901,7 +6894,7 @@ button.create {
   text-align: center;
   padding: 0.5em 4em;
   font-weight: bold;
-  background: #000;
+  background: #45283C;
   position: relative;
 }
 #main_avatar_room .avatar_tools a.loadRoomAva {
@@ -6920,8 +6913,8 @@ button.create {
 }
 #main_avatar_room .avatar_tools a.loadRoomAva span {
   cursor: pointer;
-  background: magenta;
-  color: #000;
+  background: #2D112A;
+  color: #ccc;
   padding: 0.5em 0.6em 0.5em 0.5em;
   display: block;
   position: absolute;
@@ -6959,6 +6952,7 @@ button.create {
   margin: 3em 0 0 0;
   position: relative;
   overflow: hidden;
+  height: 600px!important;
 }
 @media only screen and (min-width: 71.875em) {
   #main_avatar_room #main-user-list-room {
@@ -8854,4 +8848,9 @@ overflow-x:hidden!important
 .isOption {
 	color:#ccc!important
 }
+
+#chat .ChatDelete{
+color: #FFFFFF;
+}
 /* End User Styling */
+
